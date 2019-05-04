@@ -24,3 +24,7 @@ function runTimer() {
 
 runTimer(); //used to fix error of 1 second time delay
 setInterval(runTimer, 1000);
+
+function addAlarm(time) {
+    
+}

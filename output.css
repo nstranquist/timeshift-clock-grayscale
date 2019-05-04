@@ -50,18 +50,18 @@ a {
 
 /* layout sections */
 .page-header {
-  background-color: transparent;
+  background: transparent;
   border-bottom: 1px solid var(--gray);
 }
 
 .main-content {
-  background-color: var(--offwhite);
+  background: var(--offwhite);
   flex: 1;
   padding: 1rem;
 }
 
 .page-footer {
-  background-color: transparent;
+  background: transparent;
   border-top: 1px solid var(--gray);
 }
 
@@ -81,13 +81,15 @@ a {
   color: var(--offblack);
 }
 .nav-list a:hover {
-  background-color: var(--offwhite);
+  background: var(--offwhite);
 }
 
 /* brand/logo */
 /* App styles */
 .app-container {
   border: 5px solid black;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=output.css.map */
