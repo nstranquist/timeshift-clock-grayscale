@@ -57,6 +57,7 @@ a {
 .main-content {
   background-color: var(--offwhite);
   flex: 1;
+  padding: 1rem;
 }
 
 .page-footer {
@@ -84,5 +85,9 @@ a {
 }
 
 /* brand/logo */
+/* App styles */
+.app-container {
+  border: 5px solid black;
+}
 
 /*# sourceMappingURL=output.css.map */
