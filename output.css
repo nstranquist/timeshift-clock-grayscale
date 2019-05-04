@@ -1,3 +1,13 @@
+/* colors */
+:root {
+  --white: white;
+  --offwhite: whitesmoke;
+  --black: black;
+  --offblack: #101010;
+  --gray: lightgray;
+  --silver: silver;
+}
+
 /* reset styles */
 html {
   box-sizing: border-box;
@@ -26,14 +36,8 @@ a {
   text-decoration: none;
 }
 
-/* colors */
-:root {
-  --white: white;
-  --offwhite: whitesmoke;
-  --black: black;
-  --offblack: #101010;
-  --gray: lightgray;
-  --silver: silver;
+.text-center {
+  text-align: center;
 }
 
 /* Page Layout styles */
@@ -67,7 +71,12 @@ a {
   flex-direction: column;
   list-style-type: none;
 }
+.nav-list li {
+  display: inline-block;
+}
 .nav-list a {
+  display: block;
+  padding: 0.5rem;
   color: var(--offblack);
 }
 .nav-list a:hover {
@@ -75,8 +84,5 @@ a {
 }
 
 /* brand/logo */
-.text-center {
-  text-align: center;
-}
 
 /*# sourceMappingURL=output.css.map */
