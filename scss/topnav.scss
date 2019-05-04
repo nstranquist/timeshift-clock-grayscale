@@ -1,5 +1,5 @@
 /* TopNav Styles */
-/* nav styles */
+/* nav */
 .nav-list {
     display: flex;
     flex-direction: column;
@@ -13,4 +13,8 @@
     a:hover {
         background-color: var(--offwhite);
     }
+}
+/* brand/logo */
+.brand-name {
+
 }
