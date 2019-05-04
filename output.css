@@ -30,4 +30,10 @@ main {
   --silver: silver;
 }
 
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 /*# sourceMappingURL=output.css.map */
