@@ -1,0 +1,16 @@
+/* TopNav Styles */
+/* nav styles */
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    li {
+    }
+    a {
+        //padding: 1rem 2rem;
+        color: var(--offblack);
+    }
+    a:hover {
+        background-color: var(--offwhite);
+    }
+}

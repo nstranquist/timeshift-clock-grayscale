@@ -20,6 +20,10 @@ main {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* colors */
 :root {
   --white: white;
@@ -30,6 +34,7 @@ main {
   --silver: silver;
 }
 
+/* Page Layout styles */
 .page-layout {
   display: flex;
   flex-direction: column;
@@ -37,7 +42,7 @@ main {
   height: 100vh;
 }
 
-/* individual sections */
+/* layout sections */
 .page-header {
   background-color: transparent;
   border-bottom: 1px solid var(--gray);
@@ -51,6 +56,20 @@ main {
 .page-footer {
   background-color: transparent;
   border-top: 1px solid var(--gray);
+}
+
+/* TopNav Styles */
+/* nav styles */
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.nav-list a {
+  color: var(--offblack);
+}
+.nav-list a:hover {
+  background-color: var(--offwhite);
 }
 
 /*# sourceMappingURL=output.css.map */
