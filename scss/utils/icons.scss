@@ -1,9 +1,10 @@
 /* Icon Styles */
 /* menu icon */
 .menu-svg {
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
     cursor: pointer;
-    text-align: none;
 }
 .menu-svg.clicked .nav-drawer {
     transform: translate(150px, 200px) rotate(20deg);

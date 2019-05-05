@@ -43,9 +43,10 @@ a {
 /* Icon Styles */
 /* menu icon */
 .menu-svg {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
   cursor: pointer;
-  text-align: none;
 }
 
 .menu-svg.clicked .nav-drawer {
@@ -108,7 +109,6 @@ a {
 
 /* brand */
 .brand-name {
-  position: fixed;
   left: 0;
   right: 0;
   background: transparent;
