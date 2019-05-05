@@ -40,6 +40,22 @@ a {
   text-align: center;
 }
 
+/* Icon Styles */
+/* menu icon */
+.menu-svg {
+  float: left;
+  cursor: pointer;
+  text-align: none;
+}
+
+.menu-svg.clicked .nav-drawer {
+  transform: translate(150px, 200px) rotate(20deg);
+}
+
+.clicked {
+  display: block !important;
+}
+
 /* Page Layout styles */
 .page-layout {
   display: flex;
@@ -67,10 +83,16 @@ a {
 
 /* TopNav Styles */
 /* nav */
+.nav-drawer {
+  display: none;
+  transition: transform 300ms ease-in-out;
+}
+
 .nav-list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  transition: transform 300ms ease-in-out;
 }
 .nav-list li {
   display: inline-block;
@@ -84,7 +106,15 @@ a {
   background: var(--offwhite);
 }
 
-/* brand/logo */
+/* brand */
+.brand-name {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: -1;
+}
+
 /* App styles */
 .app-container {
   border: 5px solid black;

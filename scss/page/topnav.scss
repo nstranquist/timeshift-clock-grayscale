@@ -1,9 +1,14 @@
 /* TopNav Styles */
 /* nav */
+.nav-drawer {
+    display: none;
+    transition: transform 300ms ease-in-out;
+}
 .nav-list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    transition: transform 300ms ease-in-out;
     li {
         display: inline-block;
     }
@@ -16,4 +21,11 @@
         background: var(--offwhite);
     }
 }
-/* brand/logo */
+/* brand */
+.brand-name {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: -1;
+}

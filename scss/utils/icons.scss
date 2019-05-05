@@ -1,0 +1,13 @@
+/* Icon Styles */
+/* menu icon */
+.menu-svg {
+    float: left;
+    cursor: pointer;
+    text-align: none;
+}
+.menu-svg.clicked .nav-drawer {
+    transform: translate(150px, 200px) rotate(20deg);
+}
+.clicked {
+    display: block !important;
+}

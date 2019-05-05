@@ -1,5 +1,5 @@
-$ = (id) => {
-    return document.getElementById(id);
+$ = (query) => {
+    return document.querySelector(query);
 }
 
 function runTimer() {
@@ -19,12 +19,16 @@ function runTimer() {
     s = (s < 10) ? "0" + s : s;
 
     const time = h + ":" + m + ":" + s + ampm;
-    $('clock').innerText = time;
+    $('#clock').innerText = time;
 }
 
 runTimer(); //used to fix error of 1 second time delay
 setInterval(runTimer, 1000);
 
 function addAlarm(time) {
-    
+
 }
+
+$('.menu-svg').addEventListener('click', function() {
+    $('.nav-drawer').classList.toggle('clicked');
+});
