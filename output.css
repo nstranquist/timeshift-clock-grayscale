@@ -101,7 +101,6 @@ a {
 .brand-name {
   z-index: -1;
 }
-
 /* icon and clicks */
 .nav-drawer.clicked {
   display: block;
