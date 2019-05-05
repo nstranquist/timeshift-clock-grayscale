@@ -29,6 +29,7 @@ function addAlarm(time) {
 
 }
 
-$('.menu-svg').addEventListener('click', function() {
+$('.menu-btn').addEventListener('click', function() {
     $('.nav-drawer').classList.toggle('clicked');
+    $('.menu-btn').classList.toggle('menu-clicked');
 });

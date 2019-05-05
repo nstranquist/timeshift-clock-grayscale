@@ -2,13 +2,13 @@
 /* nav */
 .nav-drawer {
     display: none;
-    transition: transform 300ms ease-in-out;
+    //transform 300ms ease-in-out;
 }
 .nav-list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    transition: transform 300ms ease-in-out;
+    //transition: transform 300ms ease-in-out;
     li {
         display: inline-block;
     }
@@ -24,4 +24,19 @@
 /* brand */
 .brand-name {
     z-index: -1;
+}
+/* icon and clicks */
+.nav-drawer.clicked {
+    display: block;
+    //animation: menu-in 30ms ease-in-out forwards;
+}
+
+@keyframes menu-in {
+    0% {
+        opacity: 0;
+        background: transparent;
+    } 100% {
+        opacity: 1;
+        background: white;
+    }
 }

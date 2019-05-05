@@ -7,7 +7,7 @@
 }
 /* layout sections */
 .page-header {
-    background: transparent;
+    background: var(--white);
     border-bottom: 1px solid var(--gray);
 }
 .main-content {
@@ -16,6 +16,6 @@
     padding: 1rem;
 }
 .page-footer {
-    background: transparent;
+    background: var(--white);
     border-top: 1px solid var(--gray);
 }

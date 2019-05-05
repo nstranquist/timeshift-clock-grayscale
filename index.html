@@ -9,13 +9,20 @@
         <link rel="stylesheet" type="text/css" href="./output.css" />
     </head>
     <body>
-        <div class="page-layout">
+        <div class="page-layout text-center">
             <header class="page-header">
-                <svg class="menu-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!--<svg class="menu-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                     <path d="M4 31v4h40v-4H4zm0-10v4h40v-4H4zm0-10v4h40v-4H4z"/>
-                </svg>
-                <h1 class="brand-name text-center"><a href="#">Logo</a></h1>
-                <div class="nav-drawer text-center">
+                </svg>-->
+                <h1 class="brand-name">
+                    <a href="#"><span>TimeShift</span></a>
+                </h1>
+                <div class="nav-drawer">
                     <ul class="nav-list">
                         <li><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
@@ -26,6 +33,7 @@
             <main class="main-content">
                 <div class="app-container">
                     <div id="clock"></div>
+                    <div id="alarms"></div>
                 </div>
             </main>
             <footer class="page-footer">
