@@ -31,5 +31,5 @@ function addAlarm(time) {
 
 $('.menu-btn').addEventListener('click', function() {
     $('.nav-drawer').classList.toggle('clicked');
-    $('.menu-btn').classList.toggle('menu-clicked');
+    $('.menu-btn').classList.toggle('clicked');
 });

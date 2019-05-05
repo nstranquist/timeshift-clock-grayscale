@@ -25,3 +25,13 @@
         transform: translateY(10px);
     }
 }
+.menu-btn.clicked span:nth-child(1) {
+    transform: rotate(-45deg);
+}
+.menu-btn.clicked span:nth-child(2) {
+    transform: translateX(-60px);
+    transition: .2s;
+}
+.menu-btn.clicked span:nth-child(3) {
+    transform: rotate(45deg);
+}
