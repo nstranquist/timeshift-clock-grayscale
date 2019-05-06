@@ -149,6 +149,7 @@ a {
   align-items: center;
   height: auto;
   border-bottom: 1px solid gray;
+  cursor: pointer;
 }
 
 .left-container {
@@ -183,6 +184,7 @@ a {
 .log-entry {
   border-bottom: 1px solid gray;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .log-entry:last-child {

@@ -34,3 +34,19 @@ $('.menu-btn').addEventListener('click', function() {
     $('.nav-drawer').classList.toggle('clicked');
     $('.menu-btn').classList.toggle('clicked');
 });
+
+/* alarm items */
+const alarmArray = document.getElementsByClassName('alarm-item');
+for(let i=0; i<alarmArray.length; i++) {
+    alarmArray[i].addEventListener('click', function() {
+        this.classList.toggle('clicked');
+    })
+}
+
+/* log entries */
+const logArray = document.getElementsByClassName('log-entry');
+for(let i=0; i<logArray.length; i++) {
+    logArray[i].addEventListener('click', function() {
+        this.classList.toggle('clicked');
+    })
+}

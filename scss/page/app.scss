@@ -26,6 +26,7 @@
     align-items: center;
     height: auto;
     border-bottom: 1px solid gray;
+    cursor: pointer;
 }
 .left-container {
     display: flex;
@@ -54,6 +55,7 @@
 .log-entry {
     border-bottom: 1px solid gray;
     padding: .5rem;
+    cursor: pointer;
 }
 .log-entry:last-child {
     border-bottom: none;
