@@ -6,12 +6,15 @@
 }
 .app-container > div {
     width: 100%;
+    border: 1px solid black;
 }
 #clock {
-    border: 1px solid black;
     font-size: 3rem;
+    height: auto;
 }
 #alarms {
-    height: 100px;
-    border: 1px solid black;
+    height: 200px;
+}
+#log {
+    height: 200px;
 }

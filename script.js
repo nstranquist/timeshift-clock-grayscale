@@ -18,10 +18,9 @@ function runTimer() {
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
-    const ampm2 = ampm;
     const time = h + ":" + m + ":" + s; //ommitted ampm on purpose
-    $('#time').innerText=time;
-    //$('#ampm').innerText=ampm2;    
+    $('#clock').innerText=time;
+    //$('#ampm').innerText=ampm;    
 }
 
 runTimer(); //used to fix error of 1 second time delay
