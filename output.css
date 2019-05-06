@@ -121,7 +121,6 @@ a {
 /* App styles */
 .app-container {
   padding: 1rem;
-  font-size: 2rem;
 }
 
 .app-container > div {
@@ -135,11 +134,49 @@ a {
 }
 
 #alarms {
-  height: 200px;
+  height: auto;
+  min-height: 100px;
 }
 
 #log {
-  height: 200px;
+  height: auto;
+  min-height: 100px;
+}
+
+.alarm-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  border-bottom: 1px solid gray;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container > div {
+  margin: 5%;
+  padding: 5%;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.right-container > div {
+  margin: 5%;
+  padding: 5%;
+}
+
+.imgbox {
+  height: 40px;
+  width: 40px;
+  background: gray;
+  border-radius: 50%;
 }
 
 .menu-btn {
