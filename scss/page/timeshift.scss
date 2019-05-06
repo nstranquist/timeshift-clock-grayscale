@@ -1,0 +1,40 @@
+// TimeShift styles
+#timeshift {
+    height: auto;
+    min-height: 100px;
+    background: transparent;
+}
+#timeshift.clicked {
+    display: none;
+}
+.timeshift-toggle {
+    cursor: pointer;
+    background: silver;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+// timeshift layout
+.timeshift-container {
+    //padding, margins, etc
+}
+.ts-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.ts-row {
+    //width: 100%;
+    border-bottom: 1px solid black;
+    padding: .2rem;
+}
+.ts-left {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.ts-right {
+    width: 66%;
+    float: right;
+}

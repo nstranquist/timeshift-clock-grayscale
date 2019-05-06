@@ -227,6 +227,47 @@ a {
   background: #FFF;
 }
 
+#timeshift {
+  height: auto;
+  min-height: 100px;
+  background: transparent;
+}
+
+#timeshift.clicked {
+  display: none;
+}
+
+.timeshift-toggle {
+  cursor: pointer;
+  background: silver;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+  z-index: 1;
+}
+
+.ts-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.ts-row {
+  border-bottom: 1px solid black;
+  padding: 0.2rem;
+}
+
+.ts-left {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.ts-right {
+  width: 66%;
+  float: right;
+}
+
 #alarms {
   height: auto;
   min-height: 100px;
