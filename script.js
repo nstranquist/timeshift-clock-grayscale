@@ -2,6 +2,7 @@ $ = (query) => {
     return document.querySelector(query);
 }
 
+/* clock */
 function runTimer() {
     const date = new Date();
     let h = date.getHours();
@@ -26,10 +27,11 @@ function runTimer() {
 runTimer(); //used to fix error of 1 second time delay
 setInterval(runTimer, 1000);
 
-function addAlarm(time) {
+/*function addAlarm(time) {
 
-}
+}*/
 
+/* menu btn, menu-drawer toggler */
 $('.menu-btn').addEventListener('click', function() {
     $('.nav-drawer').classList.toggle('clicked');
     $('.menu-btn').classList.toggle('clicked');
@@ -51,6 +53,7 @@ for(let i=0; i<logArray.length; i++) {
     });
 }
 
+/* expand / contract alarms/logs section */
 $('.alarms-toggle').addEventListener('click', function() {
     $('#alarms').classList.toggle('clicked');
 });
@@ -61,10 +64,12 @@ $('.log-toggle').addEventListener('click', function() {
 /* navbar scroll */
 let position = 0;
 window.addEventListener('scroll', function() {
-    if (position < window.pageYOffset)
-        $('.page-header').classList.add('hide');
+    if (position < window.pageYOffset) {
+        if(!$('.nav-drawer').classList.contains('clicked'))
+            $('.shrink-on-scroll').classList.add('hide');
+    }
     else {
-        $('.page-header').classList.remove('hide');
+        $('.shrink-on-scroll').classList.remove('hide');
     }
     position = window.pageYOffset;
 })

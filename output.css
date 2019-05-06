@@ -25,6 +25,7 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   color: var(--offblack);
+  background: var(--offwhite);
 }
 
 main {
@@ -40,11 +41,20 @@ a {
   text-align: center;
 }
 
-.page-header {
-  transition: all 300ms ease-in-out;
+/*.page-header {
+    transition: all 300ms ease-in-out;
 }
 
 .page-header.hide {
+    //transition: .2s;
+    //display: none;
+    transform: translateY(calc(-2rem - 50px));
+}*/
+.shrink-on-scroll {
+  transition: all 300ms ease-in-out;
+}
+
+.shrink-on-scroll.hide {
   transform: translateY(calc(-2rem - 50px));
 }
 
@@ -72,7 +82,7 @@ a {
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.75);
-  border-bottom: 1px solid var(--gray);
+  box-shadow: 3px 3px 10px gray;
   padding: 1rem;
 }
 
@@ -92,34 +102,48 @@ a {
 /* TopNav Styles */
 /* nav */
 .nav-drawer {
-  position: relative;
-  display: none;
+  position: fixed;
+  top: calc(2rem + 48px);
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.8);
+  transition: 300ms ease-in-out;
+  transform: translateX(-100%);
 }
-
-.nav-list {
+.nav-drawer .nav-list {
+  width: 100%;
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.nav-list li {
+.nav-drawer .nav-list li {
   display: inline-block;
+  border-top: 1px solid gray;
 }
-.nav-list a {
+.nav-drawer .nav-list li:last-child {
+  border-bottom: 1px solid gray;
+}
+.nav-drawer .nav-list a {
+  font-weight: bold;
+  text-transform: uppercase;
   display: block;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   color: var(--offblack);
 }
-.nav-list a:hover {
-  background: var(--offwhite);
+.nav-drawer .nav-list a:hover {
+  transition: 200ms;
+  background: var(--gray);
 }
 
-/* brand */
-.brand-name {
-  z-index: -1;
-}
 /* icon and clicks */
 .nav-drawer.clicked {
-  display: block;
+  transform: translateX(0);
 }
 
 @keyframes menu-in {
@@ -131,6 +155,10 @@ a {
     opacity: 1;
     background: white;
   }
+}
+/* brand */
+.brand-name {
+  z-index: -1;
 }
 /* App styles */
 .app-container {
