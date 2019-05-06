@@ -92,7 +92,7 @@ ul {
 }
 
 @media (min-width: 968px) {
-  .page-layout {
+  .content-wrapper {
     margin-left: 10%;
     margin-right: 10%;
     width: auto;
@@ -107,7 +107,7 @@ ul {
   }
 }
 @media (min-width: 1748px) {
-  .page-layout {
+  .content-wrapper {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -259,6 +259,10 @@ ul {
 .ts-row {
   border-bottom: 1px solid black;
   padding: 0.2rem;
+}
+
+.ts-row:last-child {
+  border-bottom: none;
 }
 
 .ts-left {
