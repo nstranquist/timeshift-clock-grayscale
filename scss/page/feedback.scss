@@ -1,4 +1,11 @@
 // Feedback Styles
+.page-feedback {
+    margin: 2rem;
+    border: 1px solid var(--gray);
+    background: #FFF;
+    box-shadow: 3px 3px 6px var(--gray);
+}
+
 .feedback-container {
     margin-top: 1rem;
     margin-bottom: 1rem;

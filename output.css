@@ -49,11 +49,6 @@ a {
   transform: translateY(calc(-2rem - 50px));
 }
 
-footer a {
-  color: blue;
-  text-decoration: underline;
-}
-
 .alarms-toggle, .log-toggle {
   border-bottom: 1px solid var(--offblack);
 }
@@ -90,19 +85,6 @@ footer a {
   flex: 1;
   padding: 1rem;
   border-bottom: 1px solid var(--gray);
-}
-
-.page-footer {
-  background: var(--white);
-  border-top: 1px solid var(--gray);
-  padding: 1rem;
-}
-
-.page-feedback {
-  margin: 2rem;
-  border: 1px solid var(--gray);
-  background: #FFF;
-  box-shadow: 3px 3px 6px var(--gray);
 }
 
 /* TopNav Styles */
@@ -331,6 +313,13 @@ footer a {
   transform: rotate(45deg);
 }
 
+.page-feedback {
+  margin: 2rem;
+  border: 1px solid var(--gray);
+  background: #FFF;
+  box-shadow: 3px 3px 6px var(--gray);
+}
+
 .feedback-container {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -359,6 +348,17 @@ form.feedback-form input.submit-btn {
   margin-left: 30%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.page-footer {
+  background: var(--white);
+  border-top: 1px solid var(--gray);
+  padding: 1rem;
+}
+
+footer a {
+  color: blue;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=output.css.map */
