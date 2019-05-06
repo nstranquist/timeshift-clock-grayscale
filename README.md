@@ -1,6 +1,6 @@
 # TimeShift Clock - GrayScale Version
 ### "Shift Time in Your Favor!"
-### Site Live [Here](timeshift-grayscale.surge.sh)
+### Site Live [Here](https://timeshift-grayscale.surge.sh)
 ## Goal:
 Create the raw layout without worrying too much about colors.  
 Worked especially hard on making this layout "mobile-first".  
