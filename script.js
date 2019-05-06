@@ -57,3 +57,5 @@ $('.alarms-toggle').addEventListener('click', function() {
 $('.log-toggle').addEventListener('click', function() {
     $('#log').classList.toggle('clicked');
 });
+
+/* navbar scroll */

@@ -7,11 +7,19 @@
 }
 /* layout sections */
 .page-header {
-    background: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 60px;
+    //background: var(--white);
+    //background: var(--offwhite);
+    background: rgba(255,255,255,.75);
     border-bottom: 1px solid var(--gray);
     padding: 1rem;
 }
 .main-content {
+    margin-top: calc(1rem + 60px);
     background: var(--offwhite);
     flex: 1;
     padding: 1rem;
