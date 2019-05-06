@@ -2,19 +2,15 @@
 #alarms {
     height: auto;
     min-height: 100px;
+    background: transparent;
+}
+.alarms-container {
     background: #FFF;
 }
 #alarms.clicked {
     display: none;
 }
-.alarms-toggle {
-    cursor: pointer;
-    background: silver;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    //box-shadow: 3px 3px 6px var(--gray);
-    z-index: 1;
-}
+.alarms-toggle {}
 .alarm-item {
     display: flex;
     justify-content: space-between;

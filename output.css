@@ -65,6 +65,21 @@ ul {
   list-style: none;
 }
 
+.section-header {
+  cursor: pointer;
+  background: silver;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+  z-index: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-header:hover {
+  box-shadow: inset -1px -1px 12px gray;
+}
+
 /* Page Layout styles */
 .page-layout {
   display: flex;
@@ -246,15 +261,6 @@ ul {
   display: none;
 }
 
-.timeshift-toggle {
-  cursor: pointer;
-  background: silver;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid black;
-  z-index: 1;
-}
-
 .ts-list {
   display: flex;
   flex-direction: column;
@@ -307,19 +313,15 @@ ul {
 #alarms {
   height: auto;
   min-height: 100px;
+  background: transparent;
+}
+
+.alarms-container {
   background: #FFF;
 }
 
 #alarms.clicked {
   display: none;
-}
-
-.alarms-toggle {
-  cursor: pointer;
-  background: silver;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  z-index: 1;
 }
 
 .alarm-item {
@@ -371,19 +373,15 @@ ul {
 #log {
   height: auto;
   min-height: 100px;
+  background: transparent;
+}
+
+.log-container {
   background: #FFF;
 }
 
 #log.clicked {
   display: none;
-}
-
-.log-toggle {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background: silver;
-  cursor: pointer;
-  z-index: 2;
 }
 
 /* log entries */

@@ -7,14 +7,8 @@
 #timeshift.clicked {
     display: none;
 }
-.timeshift-toggle {
-    cursor: pointer;
-    background: silver;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    border-bottom: 1px solid black;
-    z-index: 1;
-}
+.timeshift-toggle {}
+
 // timeshift layout
 .timeshift-container {
     //margin-bottom: 1rem;

@@ -2,19 +2,15 @@
 #log {
     height: auto;
     min-height: 100px;
+    background: transparent;
+}
+.log-container {
     background: #FFF;
 }
 #log.clicked {
     display: none;
 }
-.log-toggle {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    background: silver;
-    cursor: pointer;
-    //box-shadow: 3px 3px 6px var(--gray);
-    z-index: 2;
-}
+.log-toggle {}
   /* log entries */
 .log-entry {
     border-bottom: 1px solid var(--gray);
