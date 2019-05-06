@@ -1,6 +1,7 @@
 /* App styles */
 .app-container {
-    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 3px 3px 6px var(--gray), -3px 0 6px var(--gray);
 }
 .app-container > div {
     width: 100%;
@@ -11,6 +12,7 @@
     height: auto;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    //box-shadow: 6px 6px 15px var(--gray);
 }
 
 /* alarms */
@@ -27,14 +29,19 @@
     background: silver;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    //box-shadow: 3px 3px 6px var(--gray);
+    z-index: 1;
 }
 .alarm-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--gray);
     cursor: pointer;
+}
+.alarm-item:last-child {
+    border-bottom: none;
 }
 .left-container {
     display: flex;
@@ -76,12 +83,17 @@
     padding-bottom: .5rem;
     background: silver;
     cursor: pointer;
+    //box-shadow: 3px 3px 6px var(--gray);
+    z-index: 2;
 }
   /* log entries */
 .log-entry {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--gray);
     padding: .5rem;
     cursor: pointer;
+}
+.log-entry:last-child {
+    border-bottom: none;
 }
 .log-header {
     display: flex;

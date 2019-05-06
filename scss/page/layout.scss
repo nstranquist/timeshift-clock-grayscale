@@ -21,6 +21,7 @@
     background: var(--offwhite);
     flex: 1;
     padding: 1rem;
+    border-bottom: 1px solid var(--gray);
 }
 .page-footer {
     background: var(--white);
@@ -28,5 +29,8 @@
     padding: 1rem;
 }
 .page-feedback {
-    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid var(--gray);
+    background: #FFF;
+    box-shadow: 3px 3px 6px var(--gray);
 }
