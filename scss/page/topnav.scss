@@ -1,5 +1,15 @@
 /* TopNav Styles */
-/* nav */
+/* navbar */
+.nav-list2 {
+    display: none;
+}
+.brand-name {
+    z-index: -1;
+    padding: 1rem;
+    span {}
+}
+
+/* nav drawer */
 .nav-drawer {
     position: fixed;
     top: calc(2rem + 48px);
@@ -43,11 +53,8 @@
     }
 }
 
-/* icon and clicks */
 .nav-drawer.clicked {
     transform: translateX(0);
-    //display: block;
-    //animation: menu-in 30ms ease-in-out forwards;
 }
 
 @keyframes menu-in {
@@ -60,13 +67,40 @@
     }
 }
 
-/* brand */
-.brand-name {
-    z-index: -1;
-    padding: 1rem;
-    span {}
-}
-
 @media (min-width: 768px) {
-    
+    .nav-list2 {
+        display: flex;
+        //justify-content: space-between;
+        align-items: center;
+        //float: right;
+        list-style: none;
+        
+        li {
+            border-right: 1px solid var(--gray);
+        }
+        li:last-child {
+            border-right: none;
+        }
+        li a {
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+            color: var(--offblack);
+        }
+        li a:hover {
+            transition: 200ms;
+            background: var(--gray);
+        }
+    }
+    .menu-btn {
+        display: none;
+    }
+    .brand-name {
+        //position: static;
+        //display: inline-block;
+    }
 }
