@@ -99,3 +99,18 @@ $('.nav-list2').addEventListener('click', function(e) {
     else
         console.log('target not recognized');
 })
+$('.nav-list').addEventListener('click', function(e) {
+    if(e.target) {
+        if(e.target.matches("a.a-clock"))
+            //clock stuff
+            $('#timeshift').classList.remove('clicked');
+        else if(e.target.matches("a.a-alarm"))
+            //alarm stuff
+            $('#alarms').classList.remove('clicked');
+        else if(e.target.matches("a.a-log"))
+            //log stuff
+            $('#log').classList.remove('clicked');
+    }
+    else
+        console.log('target not recognized');
+})
