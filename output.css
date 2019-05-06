@@ -231,6 +231,11 @@ ul {
   background: #FFF;
 }
 
+@media (max-width: 468px) {
+  #clock {
+    font-size: 3rem;
+  }
+}
 #timeshift {
   height: auto;
   min-height: 100px;

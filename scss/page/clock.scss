@@ -7,3 +7,9 @@
     background: #FFF;
     //box-shadow: 6px 6px 15px var(--gray);
 }
+
+@media (max-width: 468px) {
+    #clock {
+        font-size: 3rem;
+    }
+}
