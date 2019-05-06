@@ -40,7 +40,7 @@ const alarmArray = document.getElementsByClassName('alarm-item');
 for(let i=0; i<alarmArray.length; i++) {
     alarmArray[i].addEventListener('click', function() {
         this.classList.toggle('clicked');
-    })
+    });
 }
 
 /* log entries */
@@ -48,5 +48,12 @@ const logArray = document.getElementsByClassName('log-entry');
 for(let i=0; i<logArray.length; i++) {
     logArray[i].addEventListener('click', function() {
         this.classList.toggle('clicked');
-    })
+    });
 }
+
+$('.alarms-toggle').addEventListener('click', function() {
+    $('#alarms').classList.toggle('clicked');
+});
+$('.log-toggle').addEventListener('click', function() {
+    $('#log').classList.toggle('clicked');
+});

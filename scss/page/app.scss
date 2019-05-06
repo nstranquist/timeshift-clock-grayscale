@@ -11,15 +11,21 @@
     font-size: 3rem;
     height: auto;
 }
+
+/* alarms */
 #alarms {
     height: auto;
     min-height: 100px;
 }
-#log {
-    height: auto;
-    min-height: 100px;
+#alarms.clicked {
+    display: none;
 }
-
+.alarms-toggle {
+    cursor: pointer;
+    background: silver;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
 .alarm-item {
     display: flex;
     justify-content: space-between;
@@ -51,7 +57,21 @@
     background: gray;
     border-radius: 50%;
 }
-/* log entries */
+/* log */
+#log {
+    height: auto;
+    min-height: 100px;
+}
+#log.clicked {
+    display: none;
+}
+.log-toggle {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background: silver;
+    cursor: pointer;
+}
+  /* log entries */
 .log-entry {
     border-bottom: 1px solid gray;
     padding: .5rem;
