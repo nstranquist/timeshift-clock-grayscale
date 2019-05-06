@@ -1,21 +1,23 @@
 /* App styles */
 .app-container {
-    //border: 5px solid black;
     padding: 1rem;
 }
 .app-container > div {
     width: 100%;
-    border: 1px solid black;
+    //border: 1px solid black;
 }
 #clock {
-    font-size: 3rem;
+    font-size: 5rem;
     height: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 /* alarms */
 #alarms {
     height: auto;
     min-height: 100px;
+    background: #FFF;
 }
 #alarms.clicked {
     display: none;
@@ -57,10 +59,14 @@
     background: gray;
     border-radius: 50%;
 }
+.alarm-name {
+    font-weight: bold;
+}
 /* log */
 #log {
     height: auto;
     min-height: 100px;
+    background: #FFF;
 }
 #log.clicked {
     display: none;
@@ -76,9 +82,6 @@
     border-bottom: 1px solid gray;
     padding: .5rem;
     cursor: pointer;
-}
-.log-entry:last-child {
-    border-bottom: none;
 }
 .log-header {
     display: flex;

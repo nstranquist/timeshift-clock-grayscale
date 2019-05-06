@@ -41,15 +41,6 @@ a {
   text-align: center;
 }
 
-/*.page-header {
-    transition: all 300ms ease-in-out;
-}
-
-.page-header.hide {
-    //transition: .2s;
-    //display: none;
-    transform: translateY(calc(-2rem - 50px));
-}*/
 .shrink-on-scroll {
   transition: all 300ms ease-in-out;
 }
@@ -63,13 +54,8 @@ footer a {
   text-decoration: underline;
 }
 
-/* Icon Styles */
-/* menu icon */
-.menu-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: pointer;
+.alarms-toggle, .log-toggle {
+  border-bottom: 1px solid var(--offblack);
 }
 
 /* Page Layout styles */
@@ -101,6 +87,10 @@ footer a {
 .page-footer {
   background: var(--white);
   border-top: 1px solid var(--gray);
+  padding: 1rem;
+}
+
+.page-feedback {
   padding: 1rem;
 }
 
@@ -172,18 +162,20 @@ footer a {
 
 .app-container > div {
   width: 100%;
-  border: 1px solid black;
 }
 
 #clock {
-  font-size: 3rem;
+  font-size: 5rem;
   height: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 /* alarms */
 #alarms {
   height: auto;
   min-height: 100px;
+  background: #FFF;
 }
 
 #alarms.clicked {
@@ -234,10 +226,15 @@ footer a {
   border-radius: 50%;
 }
 
+.alarm-name {
+  font-weight: bold;
+}
+
 /* log */
 #log {
   height: auto;
   min-height: 100px;
+  background: #FFF;
 }
 
 #log.clicked {
@@ -256,10 +253,6 @@ footer a {
   border-bottom: 1px solid gray;
   padding: 0.5rem;
   cursor: pointer;
-}
-
-.log-entry:last-child {
-  border-bottom: none;
 }
 
 .log-header {

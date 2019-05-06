@@ -9,8 +9,8 @@
         <link rel="stylesheet" type="text/css" href="./output.css" />
     </head>
     <body>
-        <div class="page-layout text-center">
-            <header class="page-header shrink-on-scroll">
+        <div class="page-layout">
+            <header class="page-header shrink-on-scroll text-center">
                 <div class="menu-btn">
                     <span></span>
                     <span></span>
@@ -25,18 +25,18 @@
                 <nav class="nav-drawer">
                     <ul class="nav-list drawer-list">
                         <li><a href="#clock">Clock</a></li>
-                        <li><a href="#alarms-section">Alarms</a></li>
-                        <li><a href="#log-section">Log</a></li>
-                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#alarms-section" class="link link-alarm">Alarms</a></li>
+                        <li><a href="#log-section" class="link link-log">Log</a></li>
+                        <li><a href="#feedback-section">Feedback</a></li>
                     </ul>
                 </nav>
             </header>
             <main class="main-content">
                 <div class="app-container">
                     <!-- Clock, Alarms, Log -->
-                    <div id="clock"></div>
+                    <div id="clock" class="text-center"></div>
                     <section class="alarms-container" id="alarms-section">
-                        <header class="alarms-toggle">
+                        <header class="alarms-toggle text-center">
                             <h3 class="alarms-header">Alarms</h3>                     </h3>
                         </header>
                         <div id="alarms">
@@ -44,7 +44,7 @@
                                 <div class="left-container">
                                     <div class="imgbox"></div>
                                     <div class="alarm-name">Name</div>
-                                    <div class="alarm-days">M|T|W</div>
+                                    <div class="alarm-days">M|T|W|R|F|S|S</div>
                                 </div>
                                 <div class="right-container">
                                     <div class="alarm-status">
@@ -59,7 +59,7 @@
                                 <div class="left-container">
                                     <div class="imgbox"></div>
                                     <div class="alarm-name">Name</div>
-                                    <div class="alarm-days">M|T|W</div>
+                                    <div class="alarm-days">M|T|W|R|F|S|S</div>
                                 </div>
                                 <div class="right-container">
                                     <div class="alarm-status">
@@ -74,7 +74,7 @@
                                 <div class="left-container">
                                     <div class="imgbox"></div>
                                     <div class="alarm-name">Name</div>
-                                    <div class="alarm-days">M|T|W</div>
+                                    <div class="alarm-days">M|T|W|R|F|S|S</div>
                                 </div>
                                 <div class="right-container">
                                     <div class="alarm-status">
@@ -89,7 +89,7 @@
                                 <div class="left-container">
                                     <div class="imgbox"></div>
                                     <div class="alarm-name">Name</div>
-                                    <div class="alarm-days">M|T|W</div>
+                                    <div class="alarm-days">M|T|W|R|F|S|S</div>
                                 </div>
                                 <div class="right-container">
                                     <div class="alarm-status">
@@ -103,7 +103,7 @@
                         </div>
                     </section>
                     <section class="log-container" id="log-section">
-                        <header class="log-toggle">
+                        <header class="log-toggle text-center">
                             <h3 class="log-section-header">Log</h3>                     </h3>
                         </header>
                         <div id="log">
@@ -152,11 +152,11 @@
             </main>
             <section class="page-feedback" id="feedback-section">
                 <h2 class="text-center">Feedback</h2>
-                <p>give me ur feedback</p>
+                <p class="text-center">give me ur feedback</p>
             </section>
-            <footer class="page-footer">
+            <footer class="page-footer text-center">
                 <h3>TimeShift Clock</h3>
-                <p class="text-center">
+                <p>
                     Created by Nico, 2019.
                 </p>
                 <a href="https://github.com/nstranquist">GitHub</a>
