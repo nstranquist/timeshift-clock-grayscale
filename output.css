@@ -40,6 +40,14 @@ a {
   text-align: center;
 }
 
+.page-header {
+  transition: all 300ms ease-in-out;
+}
+
+.page-header.hide {
+  transform: translateY(calc(-2rem - 50px));
+}
+
 /* Icon Styles */
 /* menu icon */
 .menu-svg {
@@ -63,7 +71,6 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  margin-bottom: 60px;
   background: rgba(255, 255, 255, 0.75);
   border-bottom: 1px solid var(--gray);
   padding: 1rem;

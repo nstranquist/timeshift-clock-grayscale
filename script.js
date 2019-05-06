@@ -59,3 +59,12 @@ $('.log-toggle').addEventListener('click', function() {
 });
 
 /* navbar scroll */
+let position = 0;
+window.addEventListener('scroll', function() {
+    if (position < window.pageYOffset)
+        $('.page-header').classList.add('hide');
+    else {
+        $('.page-header').classList.remove('hide');
+    }
+    position = window.pageYOffset;
+})
