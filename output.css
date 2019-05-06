@@ -184,7 +184,6 @@ footer a {
   padding-bottom: 2rem;
 }
 
-/* alarms */
 #alarms {
   height: auto;
   min-height: 100px;
@@ -248,7 +247,7 @@ footer a {
   font-weight: bold;
 }
 
-/* log */
+/* Log styles */
 #log {
   height: auto;
   min-height: 100px;
