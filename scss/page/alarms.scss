@@ -1,0 +1,54 @@
+// Alarm styles
+#alarms {
+    height: auto;
+    min-height: 100px;
+    background: #FFF;
+}
+#alarms.clicked {
+    display: none;
+}
+.alarms-toggle {
+    cursor: pointer;
+    background: silver;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    //box-shadow: 3px 3px 6px var(--gray);
+    z-index: 1;
+}
+.alarm-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    border-bottom: 1px solid var(--gray);
+    cursor: pointer;
+}
+.alarm-item:last-child {
+    border-bottom: none;
+}
+.left-container {
+    display: flex;
+    flex-direction: column;
+}
+.left-container > div {
+    margin: 5%;
+    padding: 5%;
+}
+.right-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.right-container > div {
+    margin: 5%;
+    padding: 5%;
+}
+.imgbox {
+    height: 40px;
+    width: 40px;
+    background: gray;
+    border-radius: 50%;
+}
+.alarm-name {
+    font-weight: bold;
+}
