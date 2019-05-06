@@ -3,12 +3,13 @@
     height: auto;
     min-height: 100px;
     background: transparent;
+    display: none;
 }
 .log-container {
     background: #FFF;
 }
 #log.clicked {
-    display: none;
+    display: block;
 }
 .log-toggle {}
   /* log entries */

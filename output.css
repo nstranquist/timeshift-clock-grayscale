@@ -314,6 +314,7 @@ ul {
   height: auto;
   min-height: 100px;
   background: transparent;
+  display: none;
 }
 
 .alarms-container {
@@ -321,7 +322,7 @@ ul {
 }
 
 #alarms.clicked {
-  display: none;
+  display: block;
 }
 
 .alarm-item {
@@ -374,6 +375,7 @@ ul {
   height: auto;
   min-height: 100px;
   background: transparent;
+  display: none;
 }
 
 .log-container {
@@ -381,7 +383,7 @@ ul {
 }
 
 #log.clicked {
-  display: none;
+  display: block;
 }
 
 /* log entries */

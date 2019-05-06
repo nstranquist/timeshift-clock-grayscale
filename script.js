@@ -83,33 +83,28 @@ $('.drawer-list').addEventListener('click', function() {
     $('.menu-btn').classList.toggle('clicked');
 });
 
-/* event listener for nav-list2 */
+/* event listener for large screens nav-list2 */
 $('.nav-list2').addEventListener('click', function(e) {
     if(e.target) {
         if(e.target.matches("a.a-clock"))
-            //clock stuff
             $('#timeshift').classList.remove('clicked');
         else if(e.target.matches("a.a-alarm"))
-            //alarm stuff
-            $('#alarms').classList.remove('clicked');
+            $('#alarms').classList.add('clicked');
         else if(e.target.matches("a.a-log"))
-            //log stuff
-            $('#log').classList.remove('clicked');
+            $('#log').classList.add('clicked');
     }
     else
         console.log('target not recognized');
 })
+/* small screens nav-list (drawer) */
 $('.nav-list').addEventListener('click', function(e) {
     if(e.target) {
         if(e.target.matches("a.a-clock"))
-            //clock stuff
             $('#timeshift').classList.remove('clicked');
         else if(e.target.matches("a.a-alarm"))
-            //alarm stuff
-            $('#alarms').classList.remove('clicked');
+            $('#alarms').classList.add('clicked');
         else if(e.target.matches("a.a-log"))
-            //log stuff
-            $('#log').classList.remove('clicked');
+            $('#log').classList.add('clicked');
     }
     else
         console.log('target not recognized');

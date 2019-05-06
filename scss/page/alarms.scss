@@ -3,12 +3,13 @@
     height: auto;
     min-height: 100px;
     background: transparent;
+    display: none;
 }
 .alarms-container {
     background: #FFF;
 }
 #alarms.clicked {
-    display: none;
+    display: block;
 }
 .alarms-toggle {}
 .alarm-item {
