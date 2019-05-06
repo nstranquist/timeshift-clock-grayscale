@@ -255,6 +255,10 @@ ul {
   z-index: 1;
 }
 
+.timeshift-container {
+  padding-bottom: 1rem;
+}
+
 .ts-list {
   display: flex;
   flex-direction: column;
@@ -263,7 +267,7 @@ ul {
 
 .ts-row {
   border-bottom: 1px solid black;
-  padding: 0.2rem;
+  padding: 0.3rem;
 }
 
 .ts-row:last-child {
