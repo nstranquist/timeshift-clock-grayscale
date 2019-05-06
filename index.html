@@ -23,10 +23,11 @@
                     <a href="#">Time<span>Shift</span></a>
                 </h1>
                 <nav class="nav-drawer">
-                    <ul class="nav-list">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                    <ul class="nav-list drawer-list">
+                        <li><a href="#clock">Clock</a></li>
+                        <li><a href="#alarms-section">Alarms</a></li>
+                        <li><a href="#log-section">Log</a></li>
+                        <li><a href="#">Feedback</a></li>
                     </ul>
                 </nav>
             </header>
@@ -34,7 +35,7 @@
                 <div class="app-container">
                     <!-- Clock, Alarms, Log -->
                     <div id="clock"></div>
-                    <div class="alarms-container">
+                    <section class="alarms-container" id="alarms-section">
                         <header class="alarms-toggle">
                             <h3 class="alarms-header">Alarms</h3>                     </h3>
                         </header>
@@ -100,8 +101,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="log-container">
+                    </section>
+                    <section class="log-container" id="log-section">
                         <header class="log-toggle">
                             <h3 class="log-section-header">Log</h3>                     </h3>
                         </header>
@@ -146,11 +147,19 @@
                                 <p class="log-body">A shorter log description</p>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </main>
+            <section class="page-feedback" id="feedback-section">
+                <h2 class="text-center">Feedback</h2>
+                <p>give me ur feedback</p>
+            </section>
             <footer class="page-footer">
-                <h1>Footer</h1>
+                <h3>TimeShift Clock</h3>
+                <p class="text-center">
+                    Created by Nico, 2019.
+                </p>
+                <a href="https://github.com/nstranquist">GitHub</a>
             </footer>
         </div>
 

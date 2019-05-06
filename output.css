@@ -58,6 +58,11 @@ a {
   transform: translateY(calc(-2rem - 50px));
 }
 
+footer a {
+  color: blue;
+  text-decoration: underline;
+}
+
 /* Icon Styles */
 /* menu icon */
 .menu-svg {
@@ -96,7 +101,7 @@ a {
 .page-footer {
   background: var(--white);
   border-top: 1px solid var(--gray);
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 /* TopNav Styles */

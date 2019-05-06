@@ -73,3 +73,9 @@ window.addEventListener('scroll', function() {
     }
     position = window.pageYOffset;
 })
+
+/* navbar toggle visibility */
+$('.drawer-list').addEventListener('click', function() {
+    $('.nav-drawer').classList.toggle('clicked');
+    $('.menu-btn').classList.toggle('clicked');
+});
