@@ -7,7 +7,7 @@ function runTimer() {
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();
-    let ampm = 'am';
+    let ampm = "am";
 
     if(h > 12) {
         h -= 12;
@@ -18,8 +18,10 @@ function runTimer() {
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
-    const time = h + ":" + m + ":" + s + ampm;
-    $('#clock').innerText = time;
+    const ampm2 = ampm;
+    const time = h + ":" + m + ":" + s; //ommitted ampm on purpose
+    $('#time').innerText=time;
+    //$('#ampm').innerText=ampm2;    
 }
 
 runTimer(); //used to fix error of 1 second time delay

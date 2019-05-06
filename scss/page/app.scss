@@ -4,8 +4,14 @@
     padding: 1rem;
     font-size: 2rem;
 }
+.app-container > div {
+    width: 100%;
+}
+#clock {
+    border: 1px solid black;
+    font-size: 3rem;
+}
 #alarms {
     height: 100px;
-    width: 100px;
     border: 1px solid black;
 }
