@@ -87,10 +87,10 @@ a {
   border-bottom: 1px solid var(--gray);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .page-layout {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     width: auto;
     background: transparent;
   }
@@ -98,6 +98,17 @@ a {
   .page-header {
     display: flex;
     justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (min-width: 1748px) {
+  .page-layout {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .page-header {
     padding-left: 20%;
     padding-right: 20%;
   }
@@ -167,7 +178,7 @@ a {
     background: white;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .nav-list2 {
     display: flex;
     align-items: center;
@@ -213,6 +224,7 @@ a {
   height: auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
+  background: #FFF;
 }
 
 #alarms {

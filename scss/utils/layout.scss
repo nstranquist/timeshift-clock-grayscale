@@ -27,10 +27,10 @@
 
 .page-footer {}
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
     .page-layout {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
         width: auto;
         background: transparent;
     }
@@ -38,6 +38,16 @@
         display: flex;
         justify-content: space-between;
         //align-items: flex-end;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media (min-width:1748px) {
+    .page-layout {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .page-header {
         padding-left: 20%;
         padding-right: 20%;
     }
