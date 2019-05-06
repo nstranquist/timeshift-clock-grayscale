@@ -17,7 +17,7 @@
 }
 // timeshift layout
 .timeshift-container {
-    padding-bottom: 1rem;
+    //margin-bottom: 1rem;
 }
 .ts-list {
     display: flex;
@@ -31,6 +31,7 @@
 }
 .ts-row:last-child {
     border-bottom: none;
+    padding-bottom: 1rem;
 }
 .ts-left {
     width: 33%;
