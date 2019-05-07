@@ -4,11 +4,13 @@ $ = (query) => {
 
 // Fullscreen
 const elem = document.documentElement;
-$('.btn-fullscreen').addEventHandler('click', function() {
+$('.btn-fullscreen').addEventListener('click', function() {
     if(elem.requestFullscreen) {
-        elem.requestFullscreen();
+        $('.timeshift-clock').requestFullscreen();
+        $('.timeshift-clock').classList.add('fullscreen-mode');
     }
-    if (elem.exitFullscreen) {
-        elem.exitFullscreen();
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+        $('.timeshift-clock').classList.remove('fullscreen-mode');
     }
 })

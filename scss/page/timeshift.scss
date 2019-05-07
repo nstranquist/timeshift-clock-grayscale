@@ -1,6 +1,20 @@
 // TimeShift styles
-.clock-utils {
+.timeshift-clock {
     position: relative;
+}
+.timeshift-clock.fullscreen-mode {
+    padding-top: 45vh;
+    height: 100vh;
+    width: 100vw;
+    background: #FFF !important;
+    #clock {
+        height: 100vh;
+        width: 100vw;
+        //font-size: 10rem;
+    }
+    .btn-fullscreen {
+        font-size: 3rem;
+    }
 }
 #timeshift {
     height: auto;

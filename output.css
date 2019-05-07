@@ -134,6 +134,10 @@ ul {
 }
 /* TopNav Styles */
 /* navbar */
+.page-header {
+  z-index: 1;
+}
+
 .nav-list2 {
   display: none;
 }
@@ -256,8 +260,22 @@ ul {
     font-size: 3rem;
   }
 }
-.clock-utils {
+.timeshift-clock {
   position: relative;
+}
+
+.timeshift-clock.fullscreen-mode {
+  padding-top: 45vh;
+  height: 100vh;
+  width: 100vw;
+  background: #FFF !important;
+}
+.timeshift-clock.fullscreen-mode #clock {
+  height: 100vh;
+  width: 100vw;
+}
+.timeshift-clock.fullscreen-mode .btn-fullscreen {
+  font-size: 3rem;
 }
 
 #timeshift {
@@ -564,9 +582,14 @@ input[type=checkbox].toggle-switch:checked + label::after {
 
 .btn-fullscreen {
   position: absolute;
-  top: 0.1rem;
-  right: 0.1rem;
+  top: 0.2rem;
+  right: 0.3rem;
   cursor: pointer;
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-top: 0.2rem;
 }
 
 /*# sourceMappingURL=output.css.map */
