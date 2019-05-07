@@ -486,6 +486,16 @@ form.feedback-form input.submit-btn {
   margin-left: 30%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  outline: none;
+  background: var(--gray);
+  height: 40px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+form.feedback-form input.submit-btn:hover {
+  background: gray;
 }
 
 .page-footer {
