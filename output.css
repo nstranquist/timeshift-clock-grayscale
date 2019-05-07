@@ -612,4 +612,12 @@ input[type=checkbox].toggle-switch:checked + label::after {
   padding-top: 0.2rem;
 }
 
+/* Active List styles */
+.active-presets {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.2rem;
+  font-size: 1.3rem;
+}
+
 /*# sourceMappingURL=output.css.map */
