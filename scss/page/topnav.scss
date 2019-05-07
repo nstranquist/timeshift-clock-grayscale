@@ -16,7 +16,7 @@
     left: 0;
     width: 100%; //can change
     height: auto; //can change
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.9);
     transition: 300ms ease-in-out;
     transform: translateX(-100%);
     //display: none;
@@ -99,8 +99,8 @@
     .menu-btn {
         display: none;
     }
-    .brand-name {
+    /*.brand-name {
         //position: static;
         //display: inline-block;
-    }
+    }*/
 }
