@@ -256,6 +256,10 @@ ul {
     font-size: 3rem;
   }
 }
+.clock-utils {
+  position: relative;
+}
+
 #timeshift {
   height: auto;
   min-height: 100px;
@@ -301,11 +305,11 @@ ul {
 .save-wrapper h3 {
   background: black;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: white;
   cursor: pointer;
-  width: 20%;
-  margin-left: 40%;
+  width: 150px;
+  margin-left: calc(50% - 75px);
   border-radius: 5px;
   border: 1px solid black;
 }
@@ -556,6 +560,13 @@ input[type=checkbox].toggle-switch + label::after {
 
 input[type=checkbox].toggle-switch:checked + label::after {
   left: 2rem;
+}
+
+.btn-fullscreen {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=output.css.map */
