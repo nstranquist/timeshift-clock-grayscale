@@ -3,16 +3,17 @@ $ = (query) => {
 }
 
 /* clock */
+const tsclock = $('#clock');
 function runTimer() {
     const date = new Date();
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();
-    let ampm = "am";
+    //let ampm = "am";
 
     if(h > 12) {
         h -= 12;
-        ampm = "pm";
+        //ampm = "pm";
     } else if (h===0)
         h = 12;
 
@@ -20,7 +21,8 @@ function runTimer() {
     s = (s < 10) ? "0" + s : s;
 
     const time = h + ":" + m + ":" + s; //ommitted ampm on purpose
-    $('#clock').innerText=time;
+    //$('#clock').innerText=time;
+    tsclock.innerText = time;  //optimized
     //$('#ampm').innerText=ampm;    
 }
 
@@ -32,79 +34,87 @@ setInterval(runTimer, 1000);
 }*/
 
 /* menu btn, menu-drawer toggler */
-$('.menu-btn').addEventListener('click', function() {
-    $('.nav-drawer').classList.toggle('clicked');
-    $('.menu-btn').classList.toggle('clicked');
-});
-
-/* alarm items */
-const alarmArray = document.getElementsByClassName('alarm-item');
-for(let i=0; i<alarmArray.length; i++) {
-    alarmArray[i].addEventListener('click', function() {
-        this.classList.toggle('clicked');
-    });
-}
-
-/* log entries */
-const logArray = document.getElementsByClassName('log-entry');
-for(let i=0; i<logArray.length; i++) {
-    logArray[i].addEventListener('click', function() {
-        this.classList.toggle('clicked');
-    });
-}
-
-/* expand / contract alarms/logs section */
-$('.timeshift-toggle').addEventListener('click', function() {
-    $('#timeshift').classList.toggle('clicked');
-});
-$('.alarms-toggle').addEventListener('click', function() {
-    $('#alarms').classList.toggle('clicked');
-});
-$('.log-toggle').addEventListener('click', function() {
-    $('#log').classList.toggle('clicked');
+const navDrawer = $('.nav-drawer');
+const menuBtn = $('.menu-btn');
+menuBtn.addEventListener('mouseup', function() {
+    navDrawer.classList.toggle('clicked');
+    menuBtn.classList.toggle('clicked');
 });
 
 /* navbar scroll */
 let position = 0;
+const shrinkOnScroll = $('.shrink-on-scroll');
+const mywindow = window;
 window.addEventListener('scroll', function() {
-    if (position < window.pageYOffset) {
-        if(!$('.nav-drawer').classList.contains('clicked'))
-            $('.shrink-on-scroll').classList.add('hide');
+    if (position < mywindow.pageYOffset) {
+        if(!navDrawer.classList.contains('clicked'))
+            shrinkOnScroll.classList.add('hide');
     }
     else {
-        $('.shrink-on-scroll').classList.remove('hide');
+        shrinkOnScroll.classList.remove('hide');
     }
-    position = window.pageYOffset;
+    position = mywindow.pageYOffset;
 })
 
 /* navbar toggle visibility */
-$('.drawer-list').addEventListener('click', function() {
-    $('.nav-drawer').classList.toggle('clicked');
-    $('.menu-btn').classList.toggle('clicked');
+$('.drawer-list').addEventListener('mousedown', function() {
+    navDrawer.classList.toggle('clicked');
+    menuBtn.classList.toggle('clicked');
+});
+
+// alarm items
+/*const alarmArray = document.getElementsByClassName('alarm-item');
+let len, i;
+for(let i=0, len=alarmArray.length; i<len; i++) {
+    alarmArray[i].addEventListener('mouseup', function() {
+        this.classList.toggle('clicked');
+    });
+}
+
+// log entries
+const logArray = document.getElementsByClassName('log-entry');
+for(let i=0, len=logArray.length; i<len; i++) {
+    logArray[i].addEventListener('mouseup', function() {
+        this.classList.toggle('clicked');
+    });
+}*/
+
+// expand / contract alarms/logs section
+const timeshift = $('#timeshift');
+const alarms = $('#alarms');
+const log = $('#log');
+$('.timeshift-toggle').addEventListener('mousedown', function() {
+    timeshift.classList.toggle('clicked');
+});
+$('.alarms-toggle').addEventListener('mousedown', function() {
+    alarms.classList.toggle('clicked');
+});
+$('.log-toggle').addEventListener('mousedown', function() {
+    log.classList.toggle('clicked');
 });
 
 /* event listener for large screens nav-list2 */
-$('.nav-list2').addEventListener('click', function(e) {
+$('.nav-list2').addEventListener('mousedown', function(e) {
     if(e.target) {
         if(e.target.matches("a.a-clock"))
-            $('#timeshift').classList.remove('clicked');
+            timeshift.classList.remove('clicked');
         else if(e.target.matches("a.a-alarm"))
-            $('#alarms').classList.add('clicked');
+            alarms.classList.add('clicked');
         else if(e.target.matches("a.a-log"))
-            $('#log').classList.add('clicked');
+            log.classList.add('clicked');
     }
     else
         console.log('target not recognized');
 })
 /* small screens nav-list (drawer) */
-$('.nav-list').addEventListener('click', function(e) {
+$('.nav-list').addEventListener('mousedown', function(e) {
     if(e.target) {
         if(e.target.matches("a.a-clock"))
-            $('#timeshift').classList.remove('clicked');
+            timeshift.classList.remove('clicked');
         else if(e.target.matches("a.a-alarm"))
-            $('#alarms').classList.add('clicked');
+            alarms.classList.add('clicked');
         else if(e.target.matches("a.a-log"))
-            $('#log').classList.add('clicked');
+            log.classList.add('clicked');
     }
     else
         console.log('target not recognized');
