@@ -3,7 +3,7 @@ $ = (query) => {
 }
 
 /* clock */
-const tsclock = $('#clock');
+const tsclock = document.getElementById('clock');
 function runTimer() {
     const date = new Date();
     let h = date.getHours();
@@ -80,9 +80,9 @@ for(let i=0, len=logArray.length; i<len; i++) {
 }*/
 
 // expand / contract alarms/logs section
-const timeshift = $('#timeshift');
-const alarms = $('#alarms');
-const log = $('#log');
+const timeshift = document.getElementById('timeshift');
+const alarms = document.getElementById('alarms');
+const log = document.getElementById('log');
 $('.timeshift-toggle').addEventListener('mousedown', function() {
     timeshift.classList.toggle('clicked');
 });
