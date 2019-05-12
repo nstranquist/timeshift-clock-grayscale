@@ -35,7 +35,7 @@ setInterval(runTimer, 1000);
 
 /* menu btn, menu-drawer toggler */
 const navDrawer = $('.nav-drawer');
-const menuBtn = $('.menu-btn');
+const menuBtn = document.getElementById('menu-btn');
 menuBtn.addEventListener('mouseup', function() {
     navDrawer.classList.toggle('clicked');
     menuBtn.classList.toggle('clicked');

@@ -1,12 +1,9 @@
-$ = (query) => {
-    return document.querySelector(query);
-}
-const clock = $('.timeshift-clock');
-//const clockClasses = $('.timeshift-clock').classList;
+const clock = document.getElementById('timeshift-clock');
+const btnFullscrn = document.getElementById('btn-fullscreen');
 
 // Fullscreen
 const elem = document.documentElement;
-$('.btn-fullscreen').addEventListener('click', function() {
+btnFullscrn.addEventListener('click', function() {
     if(elem.requestFullscreen) {
         clock.requestFullscreen();
         clock.classList.toggle('fullscreen-mode');

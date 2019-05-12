@@ -228,22 +228,18 @@ ul {
     background: var(--gray);
   }
 
-  .menu-btn {
-    display: none;
-  }
-
   /*.brand-name {
       //position: static;
       //display: inline-block;
   }*/
 }
 /* App styles */
-.app-container {
+#app-container {
   margin: 1rem;
   box-shadow: 3px 3px 6px var(--gray), -3px 0 6px var(--gray);
 }
 
-.app-container > div {
+#app-container > div {
   width: 100%;
 }
 
@@ -260,41 +256,41 @@ ul {
     font-size: 3rem;
   }
 }
-.timeshift-clock {
+#timeshift-clock {
   position: relative;
 }
 
-.timeshift-clock.fullscreen-mode {
+#timeshift-clock.fullscreen-mode {
   height: 100vh;
   width: 100vw;
   background: #FFF !important;
 }
-.timeshift-clock.fullscreen-mode #clock {
+#timeshift-clock.fullscreen-mode #clock {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 5rem;
 }
-.timeshift-clock.fullscreen-mode .btn-fullscreen {
+#timeshift-clock.fullscreen-mode #btn-fullscreen {
   font-size: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .timeshift-clock.fullscreen-mode #clock, #clock {
+  #timeshift-clock.fullscreen-mode #clock, #clock {
     font-size: 10rem;
   }
 
-  .timeshift-clock.fullscreen-mode .btn-fullscreen {
+  #timeshift-clock.fullscreen-mode #btn-fullscreen {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1968px) {
-  .timeshift-clock.fullscreen-mode #clock, #clock {
+  #timeshift-clock.fullscreen-mode #clock, #clock {
     font-size: 15rem;
   }
 
-  .timeshift-clock.fullscreen-mode .btn-fullscreen {
+  #timeshift-clock.fullscreen-mode #btn-fullscreen {
     font-size: 5rem;
   }
 }
@@ -466,7 +462,7 @@ ul {
   text-align: start;
 }
 
-.menu-btn {
+#menu-btn {
   position: fixed;
   top: 1rem;
   left: 1rem;
@@ -476,7 +472,7 @@ ul {
   z-index: 1;
   padding: 1rem;
 }
-.menu-btn span {
+#menu-btn span {
   position: absolute;
   background: black;
   width: 30px;
@@ -487,26 +483,31 @@ ul {
   left: calc(50% - 15px);
   transition: 0.5s;
 }
-.menu-btn span:nth-child(1) {
+#menu-btn span:nth-child(1) {
   transform: translateY(-10px);
 }
-.menu-btn span:nth-child(3) {
+#menu-btn span:nth-child(3) {
   transform: translateY(10px);
 }
 
-.menu-btn.clicked span:nth-child(1) {
+#menu-btn.clicked span:nth-child(1) {
   transform: rotate(-45deg);
 }
 
-.menu-btn.clicked span:nth-child(2) {
+#menu-btn.clicked span:nth-child(2) {
   transform: translateX(-60px);
   opacity: 0;
 }
 
-.menu-btn.clicked span:nth-child(3) {
+#menu-btn.clicked span:nth-child(3) {
   transform: rotate(45deg);
 }
 
+@media (min-width: 968px) {
+  #menu-btn {
+    display: none;
+  }
+}
 .page-feedback {
   margin: 2rem;
   border: 1px solid var(--gray);
@@ -609,7 +610,7 @@ input[type=checkbox].toggle-switch:checked + label::after {
   left: 2rem;
 }
 
-.btn-fullscreen {
+#btn-fullscreen {
   position: absolute;
   top: 0.2rem;
   right: 0.3rem;
