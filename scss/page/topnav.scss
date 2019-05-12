@@ -9,7 +9,12 @@
 .brand-name {
     z-index: -1;
     padding: 1rem;
-    span {}
+}
+.github-svg-link {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
 }
 
 /* nav drawer */
@@ -104,4 +109,5 @@
         //position: static;
         //display: inline-block;
     }*/
+    .github-svg-link { display: none; }
 }

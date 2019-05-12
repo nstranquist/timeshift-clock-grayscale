@@ -146,6 +146,14 @@ ul {
   z-index: -1;
   padding: 1rem;
 }
+
+.github-svg-link {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
+
 /* nav drawer */
 .nav-drawer {
   position: fixed;
@@ -232,6 +240,9 @@ ul {
       //position: static;
       //display: inline-block;
   }*/
+  .github-svg-link {
+    display: none;
+  }
 }
 /* App styles */
 #app-container {
