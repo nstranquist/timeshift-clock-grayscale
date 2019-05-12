@@ -336,7 +336,7 @@ ul {
   text-align: center;
 }
 
-.save-wrapper h3 {
+.save-wrapper h3, .save-wrapper input {
   background: black;
   text-transform: uppercase;
   font-size: 1.7rem;
@@ -347,10 +347,13 @@ ul {
   border-radius: 5px;
   border: 1px solid black;
 }
-.save-wrapper h3:hover {
+.save-wrapper h3:hover, .save-wrapper input:hover {
   background: var(--white);
   color: var(--offblack);
   transition: 0.15s ease-in-out;
+}
+.save-wrapper input {
+  padding: 0.3rem;
 }
 
 #alarms {
@@ -544,15 +547,21 @@ form.feedback-form input.submit-btn {
   margin-top: 1rem;
   margin-bottom: 1rem;
   outline: none;
-  background: var(--gray);
-  height: 40px;
+  background: var(--black);
+  color: white;
+  border: 1px solid black;
+  height: 1, 7ren;
   font-size: 1.5rem;
   text-transform: uppercase;
-  border: none;
   border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  cursor: pointer;
 }
 form.feedback-form input.submit-btn:hover {
-  background: gray;
+  background: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .page-footer {
@@ -669,6 +678,7 @@ input[type=checkbox].toggle-switch:checked + label::after {
 }
 .social-icons-list li svg {
   transition: transform 300ms ease-in-out;
+  background: none;
 }
 .social-icons-list li:hover svg {
   transform: translateX(150%) scale(1.2);

@@ -19,6 +19,7 @@
         background: white;
         svg {
             transition: transform 300ms ease-in-out;
+            background: none;
         }
     }
     li:hover svg {

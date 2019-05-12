@@ -37,14 +37,20 @@ form.feedback-form {
         margin-top: 1rem;
         margin-bottom: 1rem;
         outline: none;
-        background: var(--gray);
-        height: 40px;
+        background: var(--black);
+        color: white;
+        border: 1px solid black;
+        height: 1,7ren;
         font-size: 1.5rem;
         text-transform: uppercase;
-        border: none;
         border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.7rem;
+        cursor: pointer;
     }
     input.submit-btn:hover {
-        background: gray;
+        background: white;
+        color: black;
+        border: 1px solid black;
     }
 }
