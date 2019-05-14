@@ -7,3 +7,9 @@
     width: 100%;
     //border: 1px solid black;
 }
+
+@media (max-width: 468px) {
+    #app-container {
+        margin: 0;
+    }
+}

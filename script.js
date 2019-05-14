@@ -3,7 +3,7 @@ $ = (query) => {
 }
 
 /* clock */
-const tsclock = document.getElementById('clock');
+const tsclock = document.getElementById('ts-clock-time');
 function runTimer() {
     const date = new Date();
     let h = date.getHours();
@@ -11,10 +11,10 @@ function runTimer() {
     let s = date.getSeconds();
     //let ampm = "am";
 
-    if(h > 12) {
+    if (h > 12) {
         h -= 12;
         //ampm = "pm";
-    } else if (h===0)
+    } else if (h === 0)
         h = 12;
 
     m = (m < 10) ? "0" + m : m;
@@ -36,7 +36,7 @@ setInterval(runTimer, 1000);
 /* menu btn, menu-drawer toggler */
 const navDrawer = $('.nav-drawer');
 const menuBtn = document.getElementById('menu-btn');
-menuBtn.addEventListener('mouseup', function() {
+menuBtn.addEventListener('mouseup', function () {
     navDrawer.classList.toggle('clicked');
     menuBtn.classList.toggle('clicked');
 });
@@ -45,9 +45,9 @@ menuBtn.addEventListener('mouseup', function() {
 let position = 0;
 const shrinkOnScroll = $('.shrink-on-scroll');
 const mywindow = window;
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     if (position < mywindow.pageYOffset) {
-        if(!navDrawer.classList.contains('clicked'))
+        if (!navDrawer.classList.contains('clicked'))
             shrinkOnScroll.classList.add('hide');
     }
     else {
@@ -57,7 +57,7 @@ window.addEventListener('scroll', function() {
 })
 
 /* navbar toggle visibility */
-$('.drawer-list').addEventListener('mousedown', function() {
+$('.drawer-list').addEventListener('mousedown', function () {
     navDrawer.classList.toggle('clicked');
     menuBtn.classList.toggle('clicked');
 });
@@ -80,40 +80,40 @@ for(let i=0, len=logArray.length; i<len; i++) {
 }*/
 
 // expand / contract alarms/logs section
-const timeshift = document.getElementById('timeshift');
-const alarms = document.getElementById('alarms');
-const log = document.getElementById('log');
-$('.timeshift-toggle').addEventListener('mousedown', function() {
+const timeshift = document.getElementById('ts-options');
+const alarms = document.getElementById('ts-alarms');
+const log = document.getElementById('ts-log');
+$('.timeshift-toggle').addEventListener('mousedown', function () {
     timeshift.classList.toggle('clicked');
 });
-$('.alarms-toggle').addEventListener('mousedown', function() {
+$('.alarms-toggle').addEventListener('mousedown', function () {
     alarms.classList.toggle('clicked');
 });
-$('.log-toggle').addEventListener('mousedown', function() {
+$('.log-toggle').addEventListener('mousedown', function () {
     log.classList.toggle('clicked');
 });
 
 /* event listener for large screens nav-list2 */
-$('.nav-list2').addEventListener('mousedown', function(e) {
-    if(e.target) {
-        if(e.target.matches("a.a-clock"))
+$('.nav-list2').addEventListener('mousedown', function (e) {
+    if (e.target) {
+        if (e.target.matches("a.a-clock"))
             timeshift.classList.remove('clicked');
-        else if(e.target.matches("a.a-alarm"))
+        else if (e.target.matches("a.a-alarm"))
             alarms.classList.add('clicked');
-        else if(e.target.matches("a.a-log"))
+        else if (e.target.matches("a.a-log"))
             log.classList.add('clicked');
     }
     else
         console.log('target not recognized');
 })
 /* small screens nav-list (drawer) */
-$('.nav-list').addEventListener('mousedown', function(e) {
-    if(e.target) {
-        if(e.target.matches("a.a-clock"))
+$('.nav-list').addEventListener('mousedown', function (e) {
+    if (e.target) {
+        if (e.target.matches("a.a-clock"))
             timeshift.classList.remove('clicked');
-        else if(e.target.matches("a.a-alarm"))
+        else if (e.target.matches("a.a-alarm"))
             alarms.classList.add('clicked');
-        else if(e.target.matches("a.a-log"))
+        else if (e.target.matches("a.a-log"))
             log.classList.add('clicked');
     }
     else
