@@ -324,18 +324,17 @@ ul {
   float: right;
 }
 
-#alarms {
+#ts-alarms {
   height: auto;
   min-height: 100px;
   background: transparent;
 }
+#ts-alarms.clicked {
+  display: none;
+}
 
 .alarms-container {
   background: #FFF;
-}
-
-#alarms.clicked {
-  display: none;
 }
 
 .alarm-item {
@@ -392,24 +391,22 @@ ul {
   letter-spacing: 2px;
 }
 
-/* Log styles */
-#log {
+/* TimeShift Log styles */
+#ts-log {
   height: auto;
   min-height: 100px;
   background: transparent;
   /*max-height: 75vh;
   overflow-y: auto;*/
 }
+#ts-log.clicked {
+  display: none;
+}
 
 .log-container {
   background: #FFF;
 }
 
-#log.clicked {
-  display: none;
-}
-
-/* log entries */
 .log-entry {
   border-bottom: 1px solid var(--gray);
   padding: 0.5rem;

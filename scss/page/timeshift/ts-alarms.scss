@@ -1,14 +1,14 @@
-// Alarm styles
-#alarms {
+// TimeShift Alarm styles
+#ts-alarms {
     height: auto;
     min-height: 100px;
     background: transparent;
+    &.clicked {
+        display: none;
+    }
 }
 .alarms-container {
     background: #FFF;
-}
-#alarms.clicked {
-    display: none;
 }
 .alarm-item {
     display: flex;
