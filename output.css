@@ -347,7 +347,7 @@ ul {
   text-align: center;
 }
 
-.save-wrapper h3, .save-wrapper input {
+.save-wrapper h3 {
   background: black;
   text-transform: uppercase;
   font-size: 1.7rem;
@@ -358,13 +358,10 @@ ul {
   border-radius: 5px;
   border: 1px solid black;
 }
-.save-wrapper h3:hover, .save-wrapper input:hover {
+.save-wrapper h3:hover {
   background: var(--white);
   color: var(--offblack);
   transition: 0.15s ease-in-out;
-}
-.save-wrapper input {
-  padding: 0.3rem;
 }
 
 #alarms {
