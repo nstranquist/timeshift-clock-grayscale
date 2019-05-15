@@ -62,29 +62,13 @@ $('.drawer-list').addEventListener('mousedown', function () {
     menuBtn.classList.toggle('clicked');
 });
 
-// alarm items
-/*const alarmArray = document.getElementsByClassName('alarm-item');
-let len, i;
-for(let i=0, len=alarmArray.length; i<len; i++) {
-    alarmArray[i].addEventListener('mouseup', function() {
-        this.classList.toggle('clicked');
-    });
-}
-
-// log entries
-const logArray = document.getElementsByClassName('log-entry');
-for(let i=0, len=logArray.length; i<len; i++) {
-    logArray[i].addEventListener('mouseup', function() {
-        this.classList.toggle('clicked');
-    });
-}*/
-
 // expand / contract alarms/logs section
-const timeshift = document.getElementById('ts-options');
+const clock = document.getElementById('ts-clock-time');
+const options = document.getElementById('ts-options');
 const alarms = document.getElementById('ts-alarms');
 const log = document.getElementById('ts-log');
-$('.timeshift-toggle').addEventListener('mousedown', function () {
-    timeshift.classList.toggle('clicked');
+$('.options-toggle').addEventListener('mousedown', function () {
+    options.classList.toggle('clicked');
 });
 $('.alarms-toggle').addEventListener('mousedown', function () {
     alarms.classList.toggle('clicked');
@@ -93,29 +77,35 @@ $('.log-toggle').addEventListener('mousedown', function () {
     log.classList.toggle('clicked');
 });
 
-/* event listener for large screens nav-list2 */
+//large screen nav
 $('.nav-list2').addEventListener('mousedown', function (e) {
-    if (e.target) {
-        if (e.target.matches("a.a-clock"))
-            timeshift.classList.remove('clicked');
-        else if (e.target.matches("a.a-alarm"))
-            alarms.classList.add('clicked');
-        else if (e.target.matches("a.a-log"))
-            log.classList.add('clicked');
-    }
-    else
-        console.log('target not recognized');
-})
-/* small screens nav-list (drawer) */
+    toggleNav(e);
+});
+//small screen nav
 $('.nav-list').addEventListener('mousedown', function (e) {
+    toggleNav(e);
+});
+
+function toggleNav(e) {
     if (e.target) {
-        if (e.target.matches("a.a-clock"))
-            timeshift.classList.remove('clicked');
-        else if (e.target.matches("a.a-alarm"))
-            alarms.classList.add('clicked');
-        else if (e.target.matches("a.a-log"))
-            log.classList.add('clicked');
+        if (e.target.matches("a.a-clock")) {
+            if (clock.classList.contains('clicked'))
+                clock.classList.remove('clicked');
+        }
+        else if (e.target.matches("a.a-options")) {
+            if (options.classList.contains('clicked'))
+                options.classList.remove('clicked');
+        }
+        else if (e.target.matches("a.a-alarm")) {
+            if (alarms.classList.contains('clicked'))
+                alarms.classList.remove('clicked');
+        }
+        else if (e.target.matches("a.a-log")) {
+            if (log.classList.contains('clicked'))
+                log.classList.remove('clicked');
+        }
     }
     else
         console.log('target not recognized');
-})
+    shrinkOnScroll.classList.add('hide');
+}

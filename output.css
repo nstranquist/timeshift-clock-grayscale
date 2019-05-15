@@ -306,12 +306,8 @@ ul {
   background: transparent;
 }
 
-#ts-options {
-  display: none;
-}
-
 #ts-options.clicked {
-  display: block;
+  display: none;
 }
 
 .ts-list {
